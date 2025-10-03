@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: telegram-bot
+    env: python
+    plan: free
+    branch: main
+    buildCommand: |
+      pip install -r requirements.txt
+    startCommand: |
+      python -m bot
+    envVars:
+      - key: SESSION
+        value: 
+      - key: TOKEN
+        value: 
+      - key: API_ID
+        value: 
+      - key: API_HASH
+        value: 
+      - key: PORT
+        value: 
+      - key: OWNER_ID
+        value: 
+      - key: DB_URI
+        value: 
+      - key: DB_NAME
+        value: 
