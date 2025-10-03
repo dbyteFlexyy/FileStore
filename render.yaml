@@ -1,3 +1,5 @@
+# render.yaml
+
 services:
   - type: web
     name: telegram-bot
@@ -10,18 +12,18 @@ services:
       python -m bot
     envVars:
       - key: SESSION
-        value: 
+        value: yato
       - key: TOKEN
-        value: 
+        value: 642712
       - key: API_ID
-        value: 
+        value: ""  # Add your API ID here
       - key: API_HASH
-        value: 
+        value: ""  # Add your API Hash here
       - key: PORT
-        value: 
+        value: 5010
       - key: OWNER_ID
-        value: 
+        value: 6497757690
       - key: DB_URI
-        value: 
+        value: mongodb  # Replace with your MongoDB URI
       - key: DB_NAME
-        value: 
+        value: yato
