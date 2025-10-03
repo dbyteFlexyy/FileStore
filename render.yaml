@@ -1,29 +1,18 @@
-# render.yaml
-
 services:
   - type: web
-    name: telegram-bot
+    name: global-filter-bot
     env: python
     plan: free
-    branch: main
-    buildCommand: |
-      pip install -r requirements.txt
-    startCommand: |
-      python -m bot
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python bot.py"
     envVars:
-      - key: SESSION
-        value: yato
       - key: TOKEN
-        value: 642712
+        sync: false
       - key: API_ID
-        value: ""  # Add your API ID here
+        sync: false
       - key: API_HASH
-        value: ""  # Add your API Hash here
-      - key: PORT
-        value: 5010
-      - key: OWNER_ID
-        value: 6497757690
+        sync: false
       - key: DB_URI
-        value: mongodb  # Replace with your MongoDB URI
-      - key: DB_NAME
-        value: yato
+        sync: false
+      - key: OWNER_ID
+        sync: false
