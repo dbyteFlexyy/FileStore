@@ -19,7 +19,7 @@ API_ID = "23513526"
 API_HASH = "8e0771f3d5d048cbf3b601b8ed152c0d"
 WORKERS = 5
 
-DB_URI = "mongodb"
+DB_URI = "mongodb+srv://susantpc1232_db_user:MsGk2PTlLnzhh2VQ@cluster0.uqxwqld.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 DB_NAME = "yato"
 
 FSUBS = [[-1003016571084, True, 10]] # Force Subscription Channels [channel_id, request_enabled, timer_in_minutes]
